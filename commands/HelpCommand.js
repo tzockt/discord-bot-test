@@ -11,8 +11,9 @@ module.exports = {
         .setDescription(`My Prefix is ${config.prefix}\n<> = required\n[] = optional`)
         .addFields(
             { name: config.prefix + "help", value: "Sends informations if you need help"},
-            { name: config.prefix + "Ping", value: "Client Ping"},
-            { name: config.prefix + "meme <subreddit>", value: "Sends a random Meme from Reddit"}
+            { name: config.prefix + "ping", value: "Client Ping"},
+            { name: config.prefix + "meme <subreddit>", value: "Sends a random Meme from Reddit"},
+            { name: config.prefix + "clear <@Username> <amount>", value: "Delete Messages"}
         )
         .setColor("#2980b9")
         .setFooter(`Command from ${message.author.username}`);

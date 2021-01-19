@@ -7,14 +7,13 @@ module.exports = {
     description: "This is a Meme Command!",
     async execute(message, args){
         try {
-            var sbr = "";
+            var sbr = "dankmemes";
             if(args.length == 1){
                 sbr = args[0]
             }
             const post = await redditimage.fetch({ type: "custom", total: 1, subreddit:[sbr] });
             const data = post[0]
 
-            console.log(data)
 
             //const msg = await message.channel.send("Loading...")
 
@@ -30,7 +29,7 @@ module.exports = {
             message.channel.send(Embed)
         } catch (error) {
             const ErrEmbed = new Discord.MessageEmbed()
-                .setColor("DARK_RED")
+                .setColor("d50000")
                 .setTitle("Fehler!")
                 .setDescription(error)
 
