@@ -6,12 +6,14 @@ module.exports = {
     name: "meme",
     description: "This is a Meme Command!",
     async execute(message, args){
-        var sbr = "dankmemes";
+        var sbr = "";
         if(args.length == 1){
             sbr = args[0]
         }
         const post = await redditimage.fetch({ type: "custom", total: 1, subreddit:[sbr] });
         const data = post[0]
+
+        //console.log(data)
 
         const msg = await message.channel.send("Loading...")
 
