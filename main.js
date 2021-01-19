@@ -26,33 +26,7 @@ client.on("message", message => {
 
     const args = message.content.slice(config.prefix.length).split(/ +/);
     const command = args.shift().toLowerCase();
-
- /*    if(!message.guild.me.hasPermission("MANAGE_MESSAGES")){
-        const Embed = new Discord.MessageEmbed()
-            .setTitle(message.client.user.username)
-            .addField("Error:", "`MANAGE_MESSAGES`")
-            .setColor("#c0392b");
-
-        message.channel.send(Embed);
-        return;
-    }else if(!message.guild.me.hasPermission("SEND_MESSAGES")){
-        const Embed = new Discord.MessageEmbed()
-            .setTitle(message.client.user.username)
-            .addField("Error:", "`SEND_MESSAGES`")
-            .setColor("#c0392b");
-
-        message.author.send(Embed);
-        return;
-    }else if(!whitelist.includes(message.guild.id)){
-        const Embed = new Discord.MessageEmbed()
-            .setTitle(message.client.user.username)
-            .addField("Error:", "`This Guild is not on the Whitelist!`")
-            .setColor("#c0392b");
-
-        message.channel.send(Embed);
-        return;
-    }; */
-
+    
     if(command === "help"){
         client.commands.get("help").execute(message, args);
     }else if(command === "meme"){
