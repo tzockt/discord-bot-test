@@ -17,7 +17,7 @@ for (const file of CommandFiles) {
 
 // ----------------------------------------------------------------------------------------------------------------------
 //WHITELIST
-const whitelist = ["714743564822773820", "685201649102618700", "660136797996711946"];
+//const whitelist = ["714743564822773820", "685201649102618700", "660136797996711946"];
 
 // ----------------------------------------------------------------------------------------------------------------------
 
@@ -27,7 +27,7 @@ client.on("message", message => {
     const args = message.content.slice(config.prefix.length).split(/ +/);
     const command = args.shift().toLowerCase();
 
-    if(!message.guild.me.hasPermission("MANAGE_MESSAGES")){
+ /*    if(!message.guild.me.hasPermission("MANAGE_MESSAGES")){
         const Embed = new Discord.MessageEmbed()
             .setTitle(message.client.user.username)
             .addField("Error:", "`MANAGE_MESSAGES`")
@@ -51,7 +51,7 @@ client.on("message", message => {
 
         message.channel.send(Embed);
         return;
-    };
+    }; */
 
     if(command === "help"){
         client.commands.get("help").execute(message, args);

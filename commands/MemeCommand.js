@@ -22,8 +22,8 @@ module.exports = {
         .setImage(data.image)
         .setAuthor("Send from: " + message.author.username, `https://cdn.discordapp.com/avatars/${message.author.id}/${message.author.avatar}.png`)
 
-        await msg.delete()
-        await message.delete()
+/*         await msg.delete()
+        await message.delete() */
         message.channel.send(Embed)
         
     }
