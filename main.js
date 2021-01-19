@@ -57,8 +57,6 @@ client.on("message", message => {
         client.commands.get("help").execute(message, args);
     }else if(command === "meme"){
         client.commands.get("meme").execute(message, args);
-    }else if(command === "cmd"){
-        client.commands.get("cmd").execute(message, args);
     }else if(command === "ping"){
         client.commands.get("ping").execute(message, args);
     }
