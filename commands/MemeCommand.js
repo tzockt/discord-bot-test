@@ -15,7 +15,7 @@ module.exports = {
 
         //console.log(data)
 
-        const msg = await message.channel.send("Loading...")
+        //const msg = await message.channel.send("Loading...")
 
         const Embed = new Discord.MessageEmbed()
         .setTitle(`${data.title}`)
