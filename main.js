@@ -80,6 +80,6 @@ client.login(config.token);
 client.on("ready", () =>{
     var TicketChannelIDs = [];
     console.log(colors.rainbow(`Logged in as ${client.user.tag}!`));
-    client.user.setActivity(`Still in development... // Version: ${config.version}`, {type: "WATCHING"});
+    client.user.setActivity(`Version: ${config.version}`, {type: "PLAYING"});
      
 });
