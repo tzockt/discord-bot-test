@@ -1,10 +1,9 @@
 {
   "name": "tzockt",
   "version": "1.0.0",
-  "description": "",
+  "description": "Discord Test Bot [TestoE]",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon main.js"
   },
   "author": "TZockt",

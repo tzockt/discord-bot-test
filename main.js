@@ -15,11 +15,6 @@ for (const file of CommandFiles) {
     client.commands.set(command.name, command);
 }
 
-// ----------------------------------------------------------------------------------------------------------------------
-//WHITELIST
-//const whitelist = ["714743564822773820", "685201649102618700", "660136797996711946"];
-
-// ----------------------------------------------------------------------------------------------------------------------
 
 client.on("message", message => {
     if(!message.content.startsWith(config.prefix) || message.author.bot) return;
