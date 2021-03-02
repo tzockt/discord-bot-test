@@ -28,8 +28,8 @@ client.on("message", message => {
         client.commands.get("meme").execute(message, args);
     }else if(command === "ping"){
         client.commands.get("ping").execute(message, args);
-    }else if(command === "clear"){
-        client.commands.get("clear").execute(message, args);
+    }else if(command === "delete"){
+        client.commands.get("delete").execute(message, args);
     }
 
 });
